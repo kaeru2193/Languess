@@ -4,7 +4,6 @@ let canAnswer = 6;
 let words = english;
 let answer = words[Math.floor(Math.random() * words.length)];
 let cleared = false;
-console.log(answer);
 let board = [];
 window.onload = () => {
     drawBoard();
@@ -26,7 +25,6 @@ window.onload = () => {
     });
     load.addEventListener("click", () => {
         words = dict.value.split("\n");
-        console.log(words);
     });
     reset.addEventListener("click", () => {
         resetGame();
@@ -71,7 +69,6 @@ function checkStatus(ans, input) {
             statusArr.push("incorrect");
         }
     });
-    console.log(remainInput);
     input.forEach((c, idx) => {
         if (statusArr[idx] == "incorrect" && ans.includes(c) && remainInput.indexOf(c) > -1) {
             statusArr[idx] = "include";
@@ -98,6 +95,5 @@ function resetGame() {
         alert("使用できる語彙がありません。プレイ不可です。");
         cleared = true;
     }
-    console.log(answer);
     board = [];
 }
