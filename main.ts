@@ -7,7 +7,7 @@ let words = english
 
 let answer = words[Math.floor(Math.random() * words.length)]
 let cleared = false
-console.log(answer)
+
 let board = []
 
 window.onload = () => {
@@ -30,7 +30,6 @@ window.onload = () => {
     })
     load.addEventListener("click", () => {
         words = dict.value.split("\n")
-        console.log(words)
     })
     reset.addEventListener("click", () => {
         resetGame()
@@ -79,7 +78,6 @@ function checkStatus(ans: string, input: string[]){
             statusArr.push("incorrect")
         }
     })
-    console.log(remainInput)
 
     input.forEach((c, idx) => {
         if (statusArr[idx] == "incorrect" && ans.includes(c) && remainInput.indexOf(c) > -1){
@@ -112,6 +110,5 @@ function resetGame() {
         cleared = true
     }
 
-    console.log(answer)
     board = []
 }
