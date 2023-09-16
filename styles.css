@@ -1,0 +1,91 @@
+main {
+    color: white;
+}
+
+#gameboard td{
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+}
+
+#gameboard {
+    border-collapse: separate;
+    border-spacing: 1vw;
+    margin: 1vw auto;
+}
+
+.notInputed {
+    border: 2px solid #b0b0b0;
+    background-color: transparent;
+}
+
+.incorrect {
+    border: none;
+    background-color: #b0b0b0;
+}
+
+.correct {
+    border: none;
+    background-color: #538d4e;
+}
+
+.include {
+    border: none;
+    background-color: #b59f3b;
+}
+
+main {
+    text-align: center;
+}
+
+html {
+    background-color: #101010;
+}
+
+input, button, textarea{
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+
+input {
+    height: 2vw;
+    background-color: transparent;
+    border: 2px solid #ff712a;
+    color: white;
+    margin-bottom: 2vw;
+    margin-top: 0.5vw;
+}
+
+button {
+    height: 2vw;
+    background-color: #ff712a;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff8c53;
+}
+
+#words {
+    margin-top: 0.5vw;
+    background-color: transparent;
+    border: 2px solid #ff712a;
+    color: white;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    box-sizing: border-box;
+    resize: none;
+    width: 20vw;
+    height: 500px;
+}
+
+#load {
+    height: 2vw;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>conlang-wordgame</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <main>
+        <h1>Languess</h1>
+        <div><button id="reset" type="button">RESET GAME</button></div>
+        <table id="gameboard">
+        </table>
+        <div id="send">
+            <input id="input" type="text">
+            <button id="enter" type="button">ENTER</button>
+        </div>
+        <h2>設定 (RESET後に適用)</h2>
+        <div>答えの文字数（文字数の合わない単語は辞書から除外されます）</div>
+        <input id="wordleng" type="number" value="5">
+        <div>最大入力回数</div>
+        <input id="times" type="number" value="6">
+        <div>以下に改行区切りの辞書を入力することで、ゲームに反映されます。</div>
+        <textarea id="words"></textarea>
+        <div><button id="load" type="button">LOAD</button></div>
+    </main>
+    <script src="./main.js" type="module"></script>
+</html>
